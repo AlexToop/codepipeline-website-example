@@ -1,0 +1,31 @@
+{
+  "name": "codepipeline-website-example",
+  "version": "1.0.0",
+  "description": "None",
+  "main": "index.js",
+  "scripts": {
+    "start": "open http://localhost:1234/index.html && parcel **/*.html",
+    "lint": "eslint --ignore-path .gitignore --ext js,vue --fix .",
+    "build": "parcel build src/index.html --public-url ./ && parcel build src/about/index.html --public-url ./about/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexToop/codepipeline-website-example.git"
+  },
+  "author": "Alexander Toop",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AlexToop/codepipeline-website-example/issues"
+  },
+  "homepage": "https://github.com/AlexToop/codepipeline-website-example#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "parcel-bundler": "^1.12.4"
+  }
+}
